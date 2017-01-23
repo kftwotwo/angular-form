@@ -1,12 +1,14 @@
 export class Post {
-  public postDate: Date;
+  private static postCounter = 4;
 
-  constructor(public author: string,
+  constructor(
+    public author: string,
     public title: string,
-    public body: string,
     public articleUrl: string,
     public imageUrl: string,
-    public category: string) {
-      this.postDate = new Date();
+    public category: string,
+    public postDate: string,
+    public id: number = Post.postCounter) {
+      Post.postCounter++;
     }
 }
