@@ -9,6 +9,7 @@ import { PostDetailComponent } from './post-detail/post-detail.component';
 import { routing } from './app.routing';
 import { PostComponent } from './post/post.component';
 import { PostListComponent } from './post-list/post-list.component';
+import { NewPostComponent } from './new-post/new-post.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,9 @@ import { PostListComponent } from './post-list/post-list.component';
     AboutComponent,
     PostDetailComponent,
     PostComponent,
-    PostListComponent
+    PostListComponent,
+    NewPostComponent,
+    NewPostComponent
   ],
   imports: [
     BrowserModule,

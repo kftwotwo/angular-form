@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="form-group">
+      <label>Author</label>
+      <input class='form-control' #newAuthor>
+    </div>
+
+    <div class="form-group">
+      <label>Title</label>
+      <input class='form-control' #newTitle>
+    </div>
+
+    <div class="form-group">
+      <label>Article Url</label>
+      <input class='form-control'#newArticle>
+    </div>
+
+    <div class="form-group">
+      <label>Image Url</label>
+      <input class='form-control' #newImage>
+    </div>
+
+    <div class="form-group">
+      <label>Category</label>
+      <input class='form-control' #newCategory>
+    </div>
+
+    <div class="form-group">
+      <label>Date</label>
+      <input class='form-control' #newDate>
+    </div>
+
+    <button type="button" (click)="enteredNewPost(newAuthor.value, newTitle.value, newArticle.value, newImage.value, newCategory.value, newDate.value)" class="btn" name="button">Add Post</button>
+  </div>
+</div>

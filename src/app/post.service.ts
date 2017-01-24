@@ -20,4 +20,8 @@ export class PostService {
     }
   }
 
+  addPost(sentPost: Post) {
+    POSTS.push(sentPost);
+  }
+
 }

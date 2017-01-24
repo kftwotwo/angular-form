@@ -1,2 +1,4 @@
 <h4>All Posts</h4>
 <app-post *ngFor="let currentPost of allPosts" [currentPost]="currentPost"></app-post>
+
+<new-post (newPostSender)="savePost($event)"></new-post>

@@ -19,4 +19,8 @@ export class PostListComponent implements OnInit {
     this.allPosts = this.postService.getPosts();
   }
 
+  savePost(sentPost: Post): void {
+    this.postService.addPost(sentPost);
+  }
+
 }
